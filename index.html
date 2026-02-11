@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Lanka | Premium Ceylon Tea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-green': '#2F5233',
+                        'brand-gold': '#D4AF37',
+                        'brand-dark': '#1A1A1A',
+                        'brand-light': '#F9F9F9',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-brand-light">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-brand-green tracking-tight">HERBAL <span class="text-brand-gold">LANKA</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-brand-green font-medium transition-colors">Home</a>
+                    <a href="products.html" class="text-gray-700 hover:text-brand-green font-medium transition-colors">Our Teas</a>
+                    <a href="about.html" class="text-gray-700 hover:text-brand-green font-medium transition-colors">Our Story</a>
+                    <a href="contact.html" class="px-5 py-2.5 bg-brand-green text-white rounded-full font-medium hover:bg-green-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">Contact Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button outline-none p-2 text-gray-600 hover:text-brand-green">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu md:hidden bg-white border-t border-gray-100">
+            <a href="index.html" class="block py-3 px-4 text-sm hover:bg-gray-50 text-brand-green font-semibold">Home</a>
+            <a href="products.html" class="block py-3 px-4 text-sm hover:bg-gray-50 text-gray-700">Our Teas</a>
+            <a href="about.html" class="block py-3 px-4 text-sm hover:bg-gray-50 text-gray-700">Our Story</a>
+            <a href="contact.html" class="block py-3 px-4 text-sm hover:bg-gray-50 text-gray-700">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="images/hero_bg.png" alt="Sri Lankan Tea Plantation" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg animate-fade-in-up">
+                Start adding <span class="text-brand-gold italic">purity</span> to your life.
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 font-light drop-shadow-md animate-fade-in-up delay-100">
+                Experience the finest, hand-picked herbal teas from the misty hills of Sri Lanka.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up delay-200">
+                <a href="products.html" class="px-8 py-4 bg-brand-gold text-brand-dark font-bold rounded-full hover:bg-yellow-500 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Shop Collection
+                </a>
+                <a href="about.html" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white/10 transition-all backdrop-blur-sm">
+                    Discover Our Story
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand-green font-semibold tracking-wide uppercase text-sm mb-2">Why Choose Us</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Nature's Best, Delivered to You</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 rounded-2xl hover:bg-green-50 transition-colors duration-300 group">
+                    <div class="w-16 h-16 bg-green-100 text-brand-green rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">100% Organic</h4>
+                    <p class="text-gray-600 leading-relaxed">Sourced directly from certified organic farms, ensuring no pesticides or harmful chemicals touch your tea.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="text-center p-6 rounded-2xl hover:bg-green-50 transition-colors duration-300 group">
+                    <div class="w-16 h-16 bg-green-100 text-brand-green rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Hand-Picked with Care</h4>
+                    <p class="text-gray-600 leading-relaxed">Each leaf is selected by experienced tea pluckers to ensure only the tenderest bud and two leaves make it to your cup.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="text-center p-6 rounded-2xl hover:bg-green-50 transition-colors duration-300 group">
+                    <div class="w-16 h-16 bg-green-100 text-brand-green rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-green group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-3">Freshness Guaranteed</h4>
+                    <p class="text-gray-600 leading-relaxed">Packed at the source within hours of harvesting to lock in the aroma and freshness of pure Ceylon tea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-24 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-brand-green font-semibold tracking-wide uppercase text-sm mb-2">Our Collection</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Trending Teas</h3>
+                </div>
+                <a href="products.html" class="hidden md:inline-flex items-center text-brand-green font-semibold hover:text-green-800 transition-colors">
+                    View All Products
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="images/product_green_tea.png" alt="Pure Green Tea" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 right-4 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full">BESTSELLER</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-xl font-bold text-gray-900">Pure Ceylon Green Tea</h4>
+                            <span class="text-brand-green font-bold">$12.50</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Rich in antioxidants, hand-picked from high-grown estates.</p>
+                        <button class="w-full py-3 border border-brand-green text-brand-green font-semibold rounded-lg hover:bg-brand-green hover:text-white transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="images/product_herbal_blend.png" alt="Royal Herbal Blend" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-xl font-bold text-gray-900">Royal Herbal Blend</h4>
+                            <span class="text-brand-green font-bold">$15.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">A soothing mix of cinnamon, lemongrass, and ginger.</p>
+                        <button class="w-full py-3 border border-brand-green text-brand-green font-semibold rounded-lg hover:bg-brand-green hover:text-white transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="images/about_us_nature.png" alt="Jasmine Infusion" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="text-xl font-bold text-gray-900">Jasmine Infusion</h4>
+                            <span class="text-brand-green font-bold">$14.00</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-4">Delicate green tea leaves infused with natural jasmine petals.</p>
+                        <button class="w-full py-3 border border-brand-green text-brand-green font-semibold rounded-lg hover:bg-brand-green hover:text-white transition-all duration-300">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                <a href="products.html" class="inline-flex items-center text-brand-green font-semibold hover:text-green-800 transition-colors">
+                    View All Products
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-24 bg-brand-green relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pattern-dots"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <svg class="w-12 h-12 text-brand-gold mx-auto mb-8 opacity-50" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.0171 16H9.01714C7.91257 16 7.01714 16.8954 7.01714 18V21H14.017ZM21 21L21 18C21 16.8954 20.1046 16 19 16H15.9999C14.8954 16 13.9999 16.8954 13.9999 18V21H21ZM7.01714 8C7.01714 5.79086 8.808 4 11.0171 4C13.2263 4 15.0171 5.79086 15.0171 8V14H7.01714V8ZM14.017 6V14C14.017 14 14.017 14 14.017 14H21V8C21 5.79086 19.2091 4 17 4C14.7909 4 13 5.79086 13 8C13 8 13.017 6 14.017 6Z"></path></svg>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">"The best herbal tea I've ever tasted. It truly feels like a sip of Sri Lanka."</h2>
+            <div class="flex items-center justify-center space-x-4">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-white font-bold text-xl">S</div>
+                <div class="text-left">
+                    <p class="text-white font-semibold">Sarah Jenkins</p>
+                    <p class="text-brand-gold text-sm">Verified Buyer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-tight mb-4 block">HERBAL <span class="text-brand-gold">LANKA</span></a>
+                    <p class="text-sm leading-relaxed mb-6">Bringing the healing embrace of nature from our gardens to your cup. Authentic, Organic, and Pure.</p>
+                    <div class="flex space-x-4">
+                        <!-- Social Icons -->
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Facebook</span>FB</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Instagram</span>IG</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><span class="sr-only">Twitter</span>TW</a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Shop</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Green Tea</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Black Tea</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Herbal Blends</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Gift Sets</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Company</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-brand-gold transition-colors">Our Story</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-brand-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Newsletter</h5>
+                    <p class="text-sm mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none focus:ring-1 focus:ring-brand-gold w-full border border-gray-700">
+                        <button class="bg-brand-gold text-brand-dark px-4 py-2 rounded-r-md font-bold hover:bg-yellow-500 transition-colors">GO</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+                <p>&copy; 2024 Herbal Lanka Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
